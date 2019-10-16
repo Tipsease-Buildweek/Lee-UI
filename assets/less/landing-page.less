@@ -1,0 +1,24 @@
+.mainHeader {
+    width: 100%;
+    height: 500px;
+    background-image: url("/images/bimo-luki-mwHzM7qB7vk-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .backgroundColor {
+        background-color: @imageCover;
+        height: 100%;
+
+        .center {
+            width: 100%;
+            height: 100%;
+            .flexbox(row nowrap, center, center, center);
+
+            h1 {
+                text-align: center;
+                color: white;
+            }
+        }
+    }
+}
