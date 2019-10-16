@@ -8,6 +8,7 @@
 
     .backgroundColor {
         height: 100%;
+
         @media @smTabletMQ {
             background-color: @imageCover;
         }
@@ -16,38 +17,81 @@
             height: 100%;
             .flexbox(column nowrap, center, center, center);
 
-            .transparentBox{
+            .transparentBox {
                 background-color: @transparentBox;
                 width: 90%;
-                padding: 7rem 1rem;
+                padding: 5rem 1rem;
                 .flexbox(column nowrap, center, center, center);
                 border-radius: 2rem;
+
                 @media @smTabletMQ {
                     background-color: transparent;
                 }
 
                 h1 {
                     color: @headerText;
+
                     @media @smTabletMQ {
                         font-size: 12rem;
                     }
+
                     @media @lgTabletMQ {
                         font-size: 15rem;
                     }
                 }
+
                 h2 {
                     color: @headerSmText;
                     margin-top: 5rem;
-                    font-size: 4rem;
+                    font-size: 5rem;
                     font-stretch: condensed;
+
                     @media @smTabletMQ {
                         font-size: 6rem;
                     }
+
                     @media @lgTabletMQ {
                         font-size: 7rem;
                     }
-                } 
+                }
             }
         }
     }
+}
+
+main {
+    .info {
+        .flexbox(column nowrap, center, center, center);
+        @media @smTabletMQ {
+            .flexbox(row wrap, space-evenly, center, center);
+        }
+
+        section {
+            .flexbox(column nowrap, center, center, center);
+            width: 100%;
+            padding: 3rem;
+            margin: 2rem 2rem 0 2rem;
+            @media @smTabletMQ {
+                max-width: 30rem;
+                padding: 0;
+            }
+
+            .iconContainer {
+                background-color: rgb(186, 220, 240);
+                border-radius: 50%;
+                padding: 6rem;
+                width: 30rem;
+                .flexbox(column nowrap, center, center, center);
+
+                i {
+                    font-size: 15rem;
+                    color: @icons;
+                }
+            }
+            h2 {
+                margin: 1rem 0;
+            }
+        }
+    }
+
 }

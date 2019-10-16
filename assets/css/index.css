@@ -173,15 +173,26 @@ img {
   justify-content: flex-end;
   align-items: center;
   align-content: center;
+  margin: 0 2rem;
 }
 .mainNav a {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin: 1rem 1rem;
   text-decoration: none;
   color: white;
 }
+@media only screen and (min-width: 501px) {
+  .mainNav a {
+    font-size: 2rem;
+  }
+}
 .mainNav a:hover {
   color: #c3ddff;
+}
+.mainNav .signupNav {
+  background-color: black;
+  padding: 1rem;
+  border-radius: 0.7rem;
 }
 .mainHeader {
   width: 100%;
@@ -210,7 +221,7 @@ img {
 .mainHeader .backgroundColor .center .transparentBox {
   background-color: rgba(43, 43, 43, 0.8);
   width: 90%;
-  padding: 7rem 1rem;
+  padding: 5rem 1rem;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -239,7 +250,7 @@ img {
 .mainHeader .backgroundColor .center .transparentBox h2 {
   color: #e9ff9b;
   margin-top: 5rem;
-  font-size: 4rem;
+  font-size: 5rem;
   font-stretch: condensed;
 }
 @media only screen and (min-width: 501px) {
@@ -251,4 +262,54 @@ img {
   .mainHeader .backgroundColor .center .transparentBox h2 {
     font-size: 7rem;
   }
+}
+main .info {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+@media only screen and (min-width: 501px) {
+  main .info {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+  }
+}
+main .info section {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  padding: 3rem;
+  margin: 2rem 2rem 0 2rem;
+}
+@media only screen and (min-width: 501px) {
+  main .info section {
+    max-width: 30rem;
+    padding: 0;
+  }
+}
+main .info section .iconContainer {
+  background-color: #badcf0;
+  border-radius: 50%;
+  padding: 6rem;
+  width: 30rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+main .info section .iconContainer i {
+  font-size: 15rem;
+  color: #475fc7;
+}
+main .info section h2 {
+  margin: 1rem 0;
 }

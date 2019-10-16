@@ -1,13 +1,23 @@
 .mainNav {
     .flexbox(row nowrap, flex-end, center, center);
+    margin: 0 2rem;
+
     a {
-        font-size: 2rem;
+        font-size: 2.5rem;
         margin: 1rem 1rem;
         text-decoration: none;
         color: @navColor;
+        @media @smTabletMQ {
+            font-size: 2rem;
+        }
         
         &:hover {
             color: @navHoverColor;
         }
+    }
+    .signupNav {
+        background-color: black;
+        padding: 1rem;
+        border-radius: 0.7rem;
     }
 }
