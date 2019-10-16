@@ -263,7 +263,7 @@ img {
     font-size: 7rem;
   }
 }
-main .info {
+main #iconSection {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -271,7 +271,7 @@ main .info {
   align-content: center;
 }
 @media only screen and (min-width: 501px) {
-  main .info {
+  main #iconSection {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -279,23 +279,27 @@ main .info {
     align-content: center;
   }
 }
-main .info section {
+main #iconSection section {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   align-content: center;
   width: 100%;
-  padding: 3rem;
-  margin: 2rem 2rem 0 2rem;
+  padding: 1rem 3rem;
+  margin: 0 2rem;
 }
 @media only screen and (min-width: 501px) {
-  main .info section {
+  main #iconSection section {
     max-width: 30rem;
     padding: 0;
+    margin: 2rem 2rem 0 2rem;
   }
 }
-main .info section .iconContainer {
+main #iconSection section:first-child {
+  margin-top: 2rem;
+}
+main #iconSection section .iconContainer {
   background-color: #badcf0;
   border-radius: 50%;
   padding: 6rem;
@@ -306,10 +310,17 @@ main .info section .iconContainer {
   align-items: center;
   align-content: center;
 }
-main .info section .iconContainer i {
+main #iconSection section .iconContainer i {
   font-size: 15rem;
   color: #475fc7;
 }
-main .info section h2 {
+main #iconSection section h2 {
   margin: 1rem 0;
+}
+main #appFeatures {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }

@@ -60,7 +60,7 @@
 }
 
 main {
-    .info {
+    #iconSection {
         .flexbox(column nowrap, center, center, center);
         @media @smTabletMQ {
             .flexbox(row wrap, space-evenly, center, center);
@@ -69,13 +69,17 @@ main {
         section {
             .flexbox(column nowrap, center, center, center);
             width: 100%;
-            padding: 3rem;
-            margin: 2rem 2rem 0 2rem;
+            padding: 1rem 3rem;
+            margin: 0 2rem;
             @media @smTabletMQ {
                 max-width: 30rem;
                 padding: 0;
+                margin: 2rem 2rem 0 2rem;
             }
 
+            &:first-child {
+                margin-top: 2rem;
+            }
             .iconContainer {
                 background-color: rgb(186, 220, 240);
                 border-radius: 50%;
@@ -93,5 +97,7 @@ main {
             }
         }
     }
-
+    #appFeatures {
+        .flexbox(column nowrap, center, center, center);
+    }
 }
