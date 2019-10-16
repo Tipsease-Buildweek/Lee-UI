@@ -6,7 +6,7 @@
         font-size: 2.5rem;
         margin: 1rem 1rem;
         text-decoration: none;
-        color: @navColor;
+        color: @navFontColor;
         @media @smTabletMQ {
             font-size: 2rem;
         }
@@ -16,8 +16,11 @@
         }
     }
     .signupNav {
-        background-color: black;
-        padding: 1rem;
-        border-radius: 0.7rem;
+        .button(@signUpButtonColor, @navFontColor, @signUpButtonHoverColor, @signUpFontHoverColor, 1rem, 2rem, 0.7rem);
+        border: 2px solid @signUpBorderColor;
+
+        &:hover {
+            border: 2px solid @signUpHoverBorderColor;
+        }
     }
 }

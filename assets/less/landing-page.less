@@ -5,10 +5,11 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 3rem;
 
     .backgroundColor {
         height: 100%;
-
         @media @smTabletMQ {
             background-color: @imageCover;
         }
@@ -23,18 +24,15 @@
                 padding: 5rem 1rem;
                 .flexbox(column nowrap, center, center, center);
                 border-radius: 2rem;
-
                 @media @smTabletMQ {
                     background-color: transparent;
                 }
 
                 h1 {
                     color: @headerText;
-
                     @media @smTabletMQ {
                         font-size: 12rem;
                     }
-
                     @media @lgTabletMQ {
                         font-size: 15rem;
                     }
@@ -45,11 +43,9 @@
                     margin-top: 5rem;
                     font-size: 5rem;
                     font-stretch: condensed;
-
                     @media @smTabletMQ {
                         font-size: 6rem;
                     }
-
                     @media @lgTabletMQ {
                         font-size: 7rem;
                     }
@@ -99,5 +95,27 @@ main {
     }
     #appFeatures {
         .flexbox(column nowrap, center, center, center);
+             
+        .flip {
+            .flexbox(column-reverse nowrap, center, center, center);
+        }
+        .features {
+            @media @smTabletMQ {
+                .flexbox(row nowrap, space-evenly, center, center);
+            }
+        }  
+        div {
+            padding: 0 3rem;
+            @media @smTabletMQ {
+                width: 40%;
+            }
+        }
+        img {
+            margin: 2rem 0;
+            border-radius: 1rem;
+            @media @smTabletMQ {
+                width: 60%;
+            }
+        }
     }
 }

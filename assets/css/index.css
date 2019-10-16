@@ -135,25 +135,38 @@ html {
 html,
 body {
   font-family: 'Roboto', sans-serif;
+  color: #363636;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 h1 {
+  font-family: 'Open Sans Condensed', sans-serif;
   font-size: 10rem;
 }
-h2 {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 3.2rem;
+h2,
+h3,
+h4 {
   padding-bottom: 1rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
 }
 h4 {
   font-size: 2.5rem;
-  padding-bottom: 1rem;
+}
+h5 {
+  font-size: 2rem;
+}
+h6 {
+  font-size: 1.7rem;
 }
 p {
   line-height: 1.5;
@@ -190,9 +203,38 @@ img {
   color: #c3ddff;
 }
 .mainNav .signupNav {
-  background-color: black;
+  background-color: #363636;
+  color: white;
   padding: 1rem;
+  font-size: 2rem;
   border-radius: 0.7rem;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border: 2px solid #363636;
+}
+.mainNav .signupNav:hover {
+  background-color: #e2e2e2;
+  color: #363636;
+}
+.mainNav .signupNav:hover {
+  border: 2px solid #363636;
+}
+footer {
+  width: 100%;
+  background-color: #363636;
+  color: white;
+  text-align: center;
+  height: 5rem;
+  font-stretch: condensed;
+  font-weight: 100;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 .mainHeader {
   width: 100%;
@@ -201,6 +243,8 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 3rem;
 }
 .mainHeader .backgroundColor {
   height: 100%;
@@ -323,4 +367,37 @@ main #appFeatures {
   justify-content: center;
   align-items: center;
   align-content: center;
+}
+main #appFeatures .flip {
+  display: flex;
+  flex-flow: column-reverse nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+@media only screen and (min-width: 501px) {
+  main #appFeatures .features {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+  }
+}
+main #appFeatures div {
+  padding: 0 3rem;
+}
+@media only screen and (min-width: 501px) {
+  main #appFeatures div {
+    width: 40%;
+  }
+}
+main #appFeatures img {
+  margin: 2rem 0;
+  border-radius: 1rem;
+}
+@media only screen and (min-width: 501px) {
+  main #appFeatures img {
+    width: 60%;
+  }
 }

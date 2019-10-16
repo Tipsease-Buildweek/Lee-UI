@@ -6,16 +6,16 @@
     align-content: @alignContent;
 }
 
-.button(@bgcolor, @fontcolor, @bgHoverColor, @width, @height, @fontSize, @borderRadius) {
-    background: @bgColor;
+.button(@bgColor, @fontColor, @bgHoverColor, @fontHoverColor, @padding, @fontSize, @borderRadius) {
+    background-color: @bgColor;
     color: @fontColor;
-    width: @width;
-    height: @height;
+    padding: @padding;
     font-size: @fontSize;
     border-radius: @borderRadius;
     .flexbox(row, center, center, center);
 
     &:hover {
-        color: @bgHoverColor;
+        background-color: @bgHoverColor;
+        color: @fontHoverColor;
     }
 }
