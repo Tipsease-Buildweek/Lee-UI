@@ -1,0 +1,21 @@
+.flexbox(@direction, @justify, @alignItems, @alignContent) {
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @alignItems;
+    align-content: @alignContent;
+}
+
+.button(@bgcolor, @fontcolor, @bgHoverColor, @width, @height, @fontSize, @borderRadius) {
+    background: @bgColor;
+    color: @fontColor;
+    width: @width;
+    height: @height;
+    font-size: @fontSize;
+    border-radius: @borderRadius;
+    .flexbox(row, center, center, center);
+
+    &:hover {
+        color: @bgHoverColor;
+    }
+}
