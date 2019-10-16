@@ -7,17 +7,46 @@
     background-size: cover;
 
     .backgroundColor {
-        background-color: @imageCover;
         height: 100%;
+        @media @smTabletMQ {
+            background-color: @imageCover;
+        }
 
         .center {
-            width: 100%;
             height: 100%;
-            .flexbox(row nowrap, center, center, center);
+            .flexbox(column nowrap, center, center, center);
 
-            h1 {
-                text-align: center;
-                color: white;
+            .transparentBox{
+                background-color: @transparentBox;
+                width: 90%;
+                padding: 7rem 1rem;
+                .flexbox(column nowrap, center, center, center);
+                border-radius: 2rem;
+                @media @smTabletMQ {
+                    background-color: transparent;
+                }
+
+                h1 {
+                    color: @headerText;
+                    @media @smTabletMQ {
+                        font-size: 12rem;
+                    }
+                    @media @lgTabletMQ {
+                        font-size: 15rem;
+                    }
+                }
+                h2 {
+                    color: @headerSmText;
+                    margin-top: 5rem;
+                    font-size: 4rem;
+                    font-stretch: condensed;
+                    @media @smTabletMQ {
+                        font-size: 6rem;
+                    }
+                    @media @lgTabletMQ {
+                        font-size: 7rem;
+                    }
+                } 
             }
         }
     }

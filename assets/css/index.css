@@ -141,12 +141,13 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 h1 {
   font-size: 10rem;
 }
 h2 {
+  font-family: 'Open Sans', sans-serif;
   font-size: 3.2rem;
   padding-bottom: 1rem;
 }
@@ -191,19 +192,63 @@ img {
   background-size: cover;
 }
 .mainHeader .backgroundColor {
-  background-color: rgba(100, 100, 100, 0.6);
   height: 100%;
 }
+@media only screen and (min-width: 501px) {
+  .mainHeader .backgroundColor {
+    background-color: rgba(100, 100, 100, 0.6);
+  }
+}
 .mainHeader .backgroundColor .center {
-  width: 100%;
   height: 100%;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   align-content: center;
 }
-.mainHeader .backgroundColor .center h1 {
-  text-align: center;
+.mainHeader .backgroundColor .center .transparentBox {
+  background-color: rgba(43, 43, 43, 0.8);
+  width: 90%;
+  padding: 7rem 1rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border-radius: 2rem;
+}
+@media only screen and (min-width: 501px) {
+  .mainHeader .backgroundColor .center .transparentBox {
+    background-color: transparent;
+  }
+}
+.mainHeader .backgroundColor .center .transparentBox h1 {
   color: white;
+}
+@media only screen and (min-width: 501px) {
+  .mainHeader .backgroundColor .center .transparentBox h1 {
+    font-size: 12rem;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .mainHeader .backgroundColor .center .transparentBox h1 {
+    font-size: 15rem;
+  }
+}
+.mainHeader .backgroundColor .center .transparentBox h2 {
+  color: #e9ff9b;
+  margin-top: 5rem;
+  font-size: 4rem;
+  font-stretch: condensed;
+}
+@media only screen and (min-width: 501px) {
+  .mainHeader .backgroundColor .center .transparentBox h2 {
+    font-size: 6rem;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .mainHeader .backgroundColor .center .transparentBox h2 {
+    font-size: 7rem;
+  }
 }
