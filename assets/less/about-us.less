@@ -1,0 +1,115 @@
+.aboutUs {
+    .mainHeader {
+        width: 100%;
+        height: 500px;
+        background-image: url("/images/joey-banks-z0Nn2KNHvdU-unsplash.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+
+        .backgroundColor {
+            height: 100%;
+
+            @media @smTabletMQ {
+                background-color: @imageCover;
+            }
+
+            .center {
+                height: 100%;
+                .flexbox(column nowrap, center, center, center);
+
+                .transparentBox {
+                    background-color: @transparentBox;
+                    width: 90%;
+                    padding: 5rem 1rem;
+                    .flexbox(column nowrap, center, center, center);
+                    border-radius: 2rem;
+
+                    @media @smTabletMQ {
+                        background-color: transparent;
+                    }
+
+                    h1 {
+                        color: @headerText;
+
+                        @media @smTabletMQ {
+                            font-size: 12rem;
+                        }
+
+                        @media @lgTabletMQ {
+                            font-size: 15rem;
+                        }
+                    }
+
+                    h2 {
+                        color: @headerSmText;
+                        margin-top: 5rem;
+                        font-size: 5rem;
+                        font-stretch: condensed;
+
+                        @media @smTabletMQ {
+                            font-size: 6rem;
+                        }
+
+                        @media @lgTabletMQ {
+                            font-size: 7rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        padding: 5%;
+        h2 {
+            font-size: 5rem;
+            text-align: center;
+            padding-bottom: 4rem;
+        }
+
+        #everyone {
+            .flexbox(row wrap, space-around, center, center);
+
+            .usContainer {
+                margin: 3rem;
+                .flexbox(column nowrap, center, center, center);
+
+                #brett {
+                    .aboutUsImages();
+                    background-image: url("/images/T4JUEB3ME-UMDECFQ10-897d3c80b2b0-512.jpg")
+                }
+
+                #shiva {
+                    .aboutUsImages();
+                    background-image: url("/images/T4JUEB3ME-UJ85BKJ2D-891ffcc3ccce-512.png")
+                }
+
+                #nicholas {
+                    .aboutUsImages();
+                    background-image: url("/images/T4JUEB3ME-UJ9PRPB7H-01a2702a44b8-512.jpg")
+                }
+
+                #brian {
+                    .aboutUsImages();
+                    background-image: url("/images/T4JUEB3ME-UG40NEE8L-8e8806d72c28-512.png")
+                }
+
+                #kayla {
+                    .aboutUsImages();
+                    background-image: url("/images/T4JUEB3ME-UH2046CPN-be0c25886eac-512.png")
+                }
+
+                #lee {
+                    .aboutUsImages();
+                    background-image: url("/images/T4JUEB3ME-UMQTS14LV-g13b3b708a55-512.jpg")
+                }
+
+                p {
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+}
