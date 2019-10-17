@@ -200,7 +200,7 @@ img {
   }
 }
 .mainNav a:hover {
-  color: #c3ddff;
+  color: #b1ddab;
 }
 .mainNav .signupNav {
   background-color: #363636;
@@ -244,7 +244,6 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  margin-bottom: 3rem;
 }
 .mainHeader .backgroundColor {
   height: 100%;
@@ -292,7 +291,7 @@ footer {
   }
 }
 .mainHeader .backgroundColor .center .transparentBox h2 {
-  color: #e9ff9b;
+  color: #b1ddab;
   margin-top: 5rem;
   font-size: 5rem;
   font-stretch: condensed;
@@ -305,6 +304,110 @@ footer {
 @media only screen and (min-width: 800px) {
   .mainHeader .backgroundColor .center .transparentBox h2 {
     font-size: 7rem;
+  }
+}
+main #tipSteps {
+  margin-top: 10rem;
+}
+@media only screen and (min-width: 800px) {
+  main #tipSteps {
+    margin: 15rem 0;
+  }
+}
+main #tipSteps div {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+main #tipSteps div h2 {
+  font-size: 5rem;
+  margin: 0 0 3rem 0;
+}
+@media only screen and (min-width: 501px) {
+  main #tipSteps div h2 {
+    font-size: 6rem;
+    margin: 0 0 7rem 0;
+  }
+}
+@media only screen and (min-width: 800px) {
+  main #tipSteps div h2 {
+    font-size: 8rem;
+  }
+}
+main #tipSteps div div {
+  font-size: 2rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+@media only screen and (min-width: 501px) {
+  main #tipSteps div div {
+    font-size: 3rem;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 800px) {
+  main #tipSteps div div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+  }
+}
+main #tipSteps div div p {
+  font-size: 3rem;
+  margin: 1rem;
+}
+@media only screen and (min-width: 501px) {
+  main #tipSteps div div p {
+    font-size: 3rem;
+  }
+}
+main #appFeatures {
+  margin: 5rem 0 3rem 0;
+}
+main #appFeatures .flip {
+  margin-top: 4rem;
+  display: flex;
+  flex-flow: column-reverse nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+@media only screen and (min-width: 501px) {
+  main #appFeatures .features {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+  }
+}
+main #appFeatures .features h2 {
+  text-transform: uppercase;
+}
+main #appFeatures div {
+  padding: 0 3rem;
+}
+@media only screen and (min-width: 501px) {
+  main #appFeatures div {
+    width: 40%;
+  }
+}
+main #appFeatures img {
+  margin: 2rem 0;
+}
+@media only screen and (min-width: 501px) {
+  main #appFeatures img {
+    width: 60%;
+    border-radius: 1rem;
+    margin: 3rem;
   }
 }
 main #iconSection {
@@ -321,6 +424,11 @@ main #iconSection {
     justify-content: space-evenly;
     align-items: center;
     align-content: center;
+  }
+}
+@media only screen and (min-width: 800px) {
+  main #iconSection {
+    margin: 9rem 0 12rem 0;
   }
 }
 main #iconSection section {
@@ -348,6 +456,7 @@ main #iconSection section .iconContainer {
   border-radius: 50%;
   padding: 6rem;
   width: 30rem;
+  margin: 3rem 0;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -359,45 +468,51 @@ main #iconSection section .iconContainer i {
   color: #475fc7;
 }
 main #iconSection section h2 {
-  margin: 1rem 0;
+  margin: 3rem 0;
+  text-transform: uppercase;
 }
-main #appFeatures {
+main #signUp {
+  margin: 6rem 0;
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
   align-content: center;
 }
-main #appFeatures .flip {
+main #signUp div {
+  background-color: #363636;
+  color: white;
+  border-radius: 2rem;
+  width: 90%;
+  max-width: 650px;
+  padding: 7rem 0;
   display: flex;
-  flex-flow: column-reverse nowrap;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
   align-content: center;
 }
 @media only screen and (min-width: 501px) {
-  main #appFeatures .features {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
+  main #signUp div {
+    padding: 7rem 6rem;
   }
 }
-main #appFeatures div {
-  padding: 0 3rem;
+main #signUp div a {
+  margin-top: 5rem;
+  background-color: #e2e2e2;
+  color: #363636;
+  padding: 4rem;
+  font-size: 3rem;
+  border-radius: 0.7rem;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border: 2px solid #363636;
+  text-decoration: none;
 }
-@media only screen and (min-width: 501px) {
-  main #appFeatures div {
-    width: 40%;
-  }
-}
-main #appFeatures img {
-  margin: 2rem 0;
-}
-@media only screen and (min-width: 501px) {
-  main #appFeatures img {
-    width: 60%;
-    border-radius: 1rem;
-  }
+main #signUp div a:hover {
+  background-color: #e2e2e2;
+  color: #363636;
 }
