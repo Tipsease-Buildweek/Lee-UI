@@ -222,6 +222,86 @@ img {
 .mainNav .signupNav:hover {
   border: 2px solid #363636;
 }
+.landing .mainHeader,
+.aboutUs .mainHeader {
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.landing .mainHeader .backgroundColor,
+.aboutUs .mainHeader .backgroundColor {
+  height: 100%;
+}
+@media only screen and (min-width: 501px) {
+  .landing .mainHeader .backgroundColor,
+  .aboutUs .mainHeader .backgroundColor {
+    background-color: rgba(100, 100, 100, 0.6);
+  }
+}
+.landing .mainHeader .backgroundColor .center,
+.aboutUs .mainHeader .backgroundColor .center {
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.landing .mainHeader .backgroundColor .center .transparentBox,
+.aboutUs .mainHeader .backgroundColor .center .transparentBox {
+  background-color: rgba(43, 43, 43, 0.8);
+  width: 90%;
+  padding: 5rem 1rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border-radius: 2rem;
+}
+@media only screen and (min-width: 501px) {
+  .landing .mainHeader .backgroundColor .center .transparentBox,
+  .aboutUs .mainHeader .backgroundColor .center .transparentBox {
+    background-color: transparent;
+  }
+}
+.landing .mainHeader .backgroundColor .center .transparentBox h1,
+.aboutUs .mainHeader .backgroundColor .center .transparentBox h1 {
+  color: white;
+}
+@media only screen and (min-width: 501px) {
+  .landing .mainHeader .backgroundColor .center .transparentBox h1,
+  .aboutUs .mainHeader .backgroundColor .center .transparentBox h1 {
+    font-size: 12rem;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .landing .mainHeader .backgroundColor .center .transparentBox h1,
+  .aboutUs .mainHeader .backgroundColor .center .transparentBox h1 {
+    font-size: 15rem;
+  }
+}
+.landing .mainHeader .backgroundColor .center .transparentBox h2,
+.aboutUs .mainHeader .backgroundColor .center .transparentBox h2 {
+  color: #b1ddab;
+  margin-top: 5rem;
+  font-size: 5rem;
+  font-stretch: condensed;
+}
+@media only screen and (min-width: 501px) {
+  .landing .mainHeader .backgroundColor .center .transparentBox h2,
+  .aboutUs .mainHeader .backgroundColor .center .transparentBox h2 {
+    font-size: 6rem;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .landing .mainHeader .backgroundColor .center .transparentBox h2,
+  .aboutUs .mainHeader .backgroundColor .center .transparentBox h2 {
+    font-size: 7rem;
+  }
+}
 footer {
   width: 100%;
   background-color: #363636;
@@ -237,74 +317,8 @@ footer {
   align-content: center;
 }
 .landing .mainHeader {
-  width: 100%;
-  height: 500px;
   background-image: url("/images/bimo-luki-mwHzM7qB7vk-unsplash.jpg");
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-.landing .mainHeader .backgroundColor {
-  height: 100%;
-}
-@media only screen and (min-width: 501px) {
-  .landing .mainHeader .backgroundColor {
-    background-color: rgba(100, 100, 100, 0.6);
-  }
-}
-.landing .mainHeader .backgroundColor .center {
-  height: 100%;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-.landing .mainHeader .backgroundColor .center .transparentBox {
-  background-color: rgba(43, 43, 43, 0.8);
-  width: 90%;
-  padding: 5rem 1rem;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  border-radius: 2rem;
-}
-@media only screen and (min-width: 501px) {
-  .landing .mainHeader .backgroundColor .center .transparentBox {
-    background-color: transparent;
-  }
-}
-.landing .mainHeader .backgroundColor .center .transparentBox h1 {
-  color: white;
-}
-@media only screen and (min-width: 501px) {
-  .landing .mainHeader .backgroundColor .center .transparentBox h1 {
-    font-size: 12rem;
-  }
-}
-@media only screen and (min-width: 800px) {
-  .landing .mainHeader .backgroundColor .center .transparentBox h1 {
-    font-size: 15rem;
-  }
-}
-.landing .mainHeader .backgroundColor .center .transparentBox h2 {
-  color: #b1ddab;
-  margin-top: 5rem;
-  font-size: 5rem;
-  font-stretch: condensed;
-}
-@media only screen and (min-width: 501px) {
-  .landing .mainHeader .backgroundColor .center .transparentBox h2 {
-    font-size: 6rem;
-  }
-}
-@media only screen and (min-width: 800px) {
-  .landing .mainHeader .backgroundColor .center .transparentBox h2 {
-    font-size: 7rem;
-  }
 }
 .landing main #tipSteps {
   margin-top: 10rem;
@@ -516,355 +530,9 @@ footer {
   background-color: #e2e2e2;
   color: #363636;
 }
-.mainHeader {
-  width: 100%;
-  height: 500px;
-  background-image: url("/images/bimo-luki-mwHzM7qB7vk-unsplash.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-.mainHeader .backgroundColor {
-  height: 100%;
-}
-@media only screen and (min-width: 501px) {
-  .mainHeader .backgroundColor {
-    background-color: rgba(100, 100, 100, 0.6);
-  }
-}
-.mainHeader .backgroundColor .center {
-  height: 100%;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-.mainHeader .backgroundColor .center .transparentBox {
-  background-color: rgba(43, 43, 43, 0.8);
-  width: 90%;
-  padding: 5rem 1rem;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  border-radius: 2rem;
-}
-@media only screen and (min-width: 501px) {
-  .mainHeader .backgroundColor .center .transparentBox {
-    background-color: transparent;
-  }
-}
-.mainHeader .backgroundColor .center .transparentBox h1 {
-  color: white;
-}
-@media only screen and (min-width: 501px) {
-  .mainHeader .backgroundColor .center .transparentBox h1 {
-    font-size: 12rem;
-  }
-}
-@media only screen and (min-width: 800px) {
-  .mainHeader .backgroundColor .center .transparentBox h1 {
-    font-size: 15rem;
-  }
-}
-.mainHeader .backgroundColor .center .transparentBox h2 {
-  color: #b1ddab;
-  margin-top: 5rem;
-  font-size: 5rem;
-  font-stretch: condensed;
-}
-@media only screen and (min-width: 501px) {
-  .mainHeader .backgroundColor .center .transparentBox h2 {
-    font-size: 6rem;
-  }
-}
-@media only screen and (min-width: 800px) {
-  .mainHeader .backgroundColor .center .transparentBox h2 {
-    font-size: 7rem;
-  }
-}
-main #tipSteps {
-  margin-top: 10rem;
-}
-@media only screen and (min-width: 800px) {
-  main #tipSteps {
-    margin: 15rem 0;
-  }
-}
-main #tipSteps div {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-main #tipSteps div h2 {
-  font-size: 5rem;
-  margin: 0 0 3rem 0;
-}
-@media only screen and (min-width: 501px) {
-  main #tipSteps div h2 {
-    font-size: 6rem;
-    margin: 0 0 7rem 0;
-  }
-}
-@media only screen and (min-width: 800px) {
-  main #tipSteps div h2 {
-    font-size: 8rem;
-  }
-}
-main #tipSteps div div {
-  font-size: 2rem;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-@media only screen and (min-width: 501px) {
-  main #tipSteps div div {
-    font-size: 3rem;
-    width: 100%;
-  }
-}
-@media only screen and (min-width: 800px) {
-  main #tipSteps div div {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-    width: 100%;
-  }
-}
-main #tipSteps div div p {
-  font-size: 3rem;
-  margin: 1rem;
-}
-@media only screen and (min-width: 501px) {
-  main #tipSteps div div p {
-    font-size: 3rem;
-  }
-}
-main #appFeatures {
-  margin: 5rem 0 3rem 0;
-}
-main #appFeatures .flip {
-  margin-top: 4rem;
-  display: flex;
-  flex-flow: column-reverse nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-@media only screen and (min-width: 501px) {
-  main #appFeatures .features {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
-  }
-}
-main #appFeatures .features h2 {
-  text-transform: uppercase;
-}
-main #appFeatures div {
-  padding: 0 3rem;
-}
-@media only screen and (min-width: 501px) {
-  main #appFeatures div {
-    width: 40%;
-  }
-}
-main #appFeatures img {
-  margin: 2rem 0;
-}
-@media only screen and (min-width: 501px) {
-  main #appFeatures img {
-    width: 60%;
-    border-radius: 1rem;
-    margin: 3rem;
-  }
-}
-main #iconSection {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-@media only screen and (min-width: 501px) {
-  main #iconSection {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
-  }
-}
-@media only screen and (min-width: 800px) {
-  main #iconSection {
-    margin: 9rem 0 12rem 0;
-  }
-}
-main #iconSection section {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  width: 100%;
-  padding: 1rem 3rem;
-  margin: 0 2rem;
-}
-@media only screen and (min-width: 501px) {
-  main #iconSection section {
-    max-width: 30rem;
-    padding: 0;
-    margin: 2rem 2rem 0 2rem;
-  }
-}
-main #iconSection section:first-child {
-  margin-top: 2rem;
-}
-main #iconSection section .iconContainer {
-  background-color: #badcf0;
-  border-radius: 50%;
-  padding: 6rem;
-  width: 30rem;
-  margin: 3rem 0;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-main #iconSection section .iconContainer i {
-  font-size: 15rem;
-  color: #475fc7;
-}
-main #iconSection section h2 {
-  margin: 3rem 0;
-  text-transform: uppercase;
-}
-main #signUp {
-  margin: 6rem 0;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-main #signUp div {
-  background-color: #363636;
-  color: white;
-  border-radius: 2rem;
-  width: 90%;
-  max-width: 650px;
-  padding: 7rem 0;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-@media only screen and (min-width: 501px) {
-  main #signUp div {
-    padding: 7rem 6rem;
-  }
-}
-main #signUp div a {
-  margin-top: 5rem;
-  background-color: #e2e2e2;
-  color: #363636;
-  padding: 4rem;
-  font-size: 3rem;
-  border-radius: 0.7rem;
-  display: flex;
-  flex-flow: row;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  border: 2px solid #363636;
-  text-decoration: none;
-}
-main #signUp div a:hover {
-  background-color: #e2e2e2;
-  color: #363636;
-}
 .aboutUs .mainHeader {
-  width: 100%;
-  height: 500px;
   background-image: url("/images/sam-truong-dan--rF4kuvgHhU-unsplash.jpg");
   background-position-y: -175px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-.aboutUs .mainHeader .backgroundColor {
-  height: 100%;
-}
-@media only screen and (min-width: 501px) {
-  .aboutUs .mainHeader .backgroundColor {
-    background-color: rgba(100, 100, 100, 0.6);
-  }
-}
-.aboutUs .mainHeader .backgroundColor .center {
-  height: 100%;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-.aboutUs .mainHeader .backgroundColor .center .transparentBox {
-  background-color: rgba(43, 43, 43, 0.8);
-  width: 90%;
-  padding: 5rem 1rem;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  border-radius: 2rem;
-}
-@media only screen and (min-width: 501px) {
-  .aboutUs .mainHeader .backgroundColor .center .transparentBox {
-    background-color: transparent;
-  }
-}
-.aboutUs .mainHeader .backgroundColor .center .transparentBox h1 {
-  color: white;
-}
-@media only screen and (min-width: 501px) {
-  .aboutUs .mainHeader .backgroundColor .center .transparentBox h1 {
-    font-size: 12rem;
-  }
-}
-@media only screen and (min-width: 800px) {
-  .aboutUs .mainHeader .backgroundColor .center .transparentBox h1 {
-    font-size: 15rem;
-  }
-}
-.aboutUs .mainHeader .backgroundColor .center .transparentBox h2 {
-  color: #b1ddab;
-  margin-top: 5rem;
-  font-size: 5rem;
-  font-stretch: condensed;
-}
-@media only screen and (min-width: 501px) {
-  .aboutUs .mainHeader .backgroundColor .center .transparentBox h2 {
-    font-size: 6rem;
-  }
-}
-@media only screen and (min-width: 800px) {
-  .aboutUs .mainHeader .backgroundColor .center .transparentBox h2 {
-    font-size: 7rem;
-  }
 }
 .aboutUs main {
   padding: 5%;
