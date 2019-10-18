@@ -179,6 +179,9 @@ img {
 }
 .container {
   width: 100%;
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 10rem;
 }
 .mainNav {
   display: flex;
@@ -187,20 +190,6 @@ img {
   align-items: center;
   align-content: center;
   margin: 0 2rem;
-}
-.mainNav a {
-  font-size: 2.5rem;
-  margin: 1rem 1rem;
-  text-decoration: none;
-  color: white;
-}
-@media only screen and (min-width: 501px) {
-  .mainNav a {
-    font-size: 2rem;
-  }
-}
-.mainNav a:hover {
-  color: #b1ddab;
 }
 .mainNav .signupNav {
   background-color: #363636;
@@ -222,85 +211,127 @@ img {
 .mainNav .signupNav:hover {
   border: 2px solid #363636;
 }
-.landing .mainHeader,
-.aboutUs .mainHeader {
+.mainNav a {
+  font-size: 2.5rem;
+  margin: 1rem 1rem;
+  text-decoration: none;
+  color: white;
+}
+@media only screen and (min-width: 501px) {
+  .mainNav a {
+    font-size: 2rem;
+  }
+}
+.mainNav a:hover {
+  color: #b1ddab;
+}
+.attribution .mainNav .signupNav {
+  background-color: #363636;
+  color: white;
+  padding: 1rem;
+  font-size: 2rem;
+  border-radius: 0.7rem;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border: 2px solid #363636;
+}
+.attribution .mainNav .signupNav:hover {
+  background-color: #e2e2e2;
+  color: #363636;
+}
+.attribution .mainNav .signupNav:hover {
+  border: 2px solid #363636;
+}
+.attribution .mainNav a {
+  color: #363636;
+}
+.attribution .mainNav a:hover {
+  color: #6d8a69;
+}
+.mainHeader {
   width: 100%;
-  height: 500px;
+  height: 45rem;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
-.landing .mainHeader .backgroundColor,
-.aboutUs .mainHeader .backgroundColor {
+.mainHeader .backgroundColor {
   height: 100%;
+  background-color: rgba(100, 100, 100, 0.6);
 }
-@media only screen and (min-width: 501px) {
-  .landing .mainHeader .backgroundColor,
-  .aboutUs .mainHeader .backgroundColor {
-    background-color: rgba(100, 100, 100, 0.6);
-  }
-}
-.landing .mainHeader .backgroundColor .center,
-.aboutUs .mainHeader .backgroundColor .center {
-  height: 100%;
+.mainHeader .backgroundColor .title {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   align-content: center;
 }
-.landing .mainHeader .backgroundColor .center .transparentBox,
-.aboutUs .mainHeader .backgroundColor .center .transparentBox {
-  background-color: rgba(43, 43, 43, 0.8);
-  width: 90%;
-  padding: 5rem 1rem;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  border-radius: 2rem;
+.mainHeader .backgroundColor .title img {
+  width: 35rem;
+  margin-top: 6rem;
 }
 @media only screen and (min-width: 501px) {
-  .landing .mainHeader .backgroundColor .center .transparentBox,
-  .aboutUs .mainHeader .backgroundColor .center .transparentBox {
-    background-color: transparent;
-  }
-}
-.landing .mainHeader .backgroundColor .center .transparentBox h1,
-.aboutUs .mainHeader .backgroundColor .center .transparentBox h1 {
-  color: white;
-}
-@media only screen and (min-width: 501px) {
-  .landing .mainHeader .backgroundColor .center .transparentBox h1,
-  .aboutUs .mainHeader .backgroundColor .center .transparentBox h1 {
-    font-size: 12rem;
+  .mainHeader .backgroundColor .title img {
+    width: 40rem;
+    margin-top: 3rem;
   }
 }
 @media only screen and (min-width: 800px) {
-  .landing .mainHeader .backgroundColor .center .transparentBox h1,
-  .aboutUs .mainHeader .backgroundColor .center .transparentBox h1 {
-    font-size: 15rem;
+  .mainHeader .backgroundColor .title img {
+    width: 45rem;
+    margin-top: 0rem;
   }
 }
-.landing .mainHeader .backgroundColor .center .transparentBox h2,
-.aboutUs .mainHeader .backgroundColor .center .transparentBox h2 {
+.mainHeader .backgroundColor .title h2 {
   color: #b1ddab;
-  margin-top: 5rem;
+  margin-top: 0rem;
   font-size: 5rem;
   font-stretch: condensed;
 }
 @media only screen and (min-width: 501px) {
-  .landing .mainHeader .backgroundColor .center .transparentBox h2,
-  .aboutUs .mainHeader .backgroundColor .center .transparentBox h2 {
+  .mainHeader .backgroundColor .title h2 {
     font-size: 6rem;
   }
 }
-@media only screen and (min-width: 800px) {
-  .landing .mainHeader .backgroundColor .center .transparentBox h2,
-  .aboutUs .mainHeader .backgroundColor .center .transparentBox h2 {
-    font-size: 7rem;
+.attribution .mainHeader .title {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.attribution .mainHeader .title img {
+  width: 35rem;
+  margin-top: 6rem;
+}
+@media only screen and (min-width: 501px) {
+  .attribution .mainHeader .title img {
+    width: 40rem;
+    margin-top: 3rem;
   }
+}
+@media only screen and (min-width: 800px) {
+  .attribution .mainHeader .title img {
+    width: 45rem;
+    margin-top: 0rem;
+  }
+}
+.attribution .mainHeader .title h2 {
+  color: #b1ddab;
+  margin-top: 0rem;
+  font-size: 5rem;
+  font-stretch: condensed;
+}
+@media only screen and (min-width: 501px) {
+  .attribution .mainHeader .title h2 {
+    font-size: 6rem;
+  }
+}
+.attribution .mainHeader .title h2 {
+  color: #6d8a69;
 }
 footer {
   width: 100%;
@@ -310,11 +341,20 @@ footer {
   height: 5rem;
   font-stretch: condensed;
   font-weight: 100;
+  bottom: 0;
+  position: absolute;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
   align-content: center;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer a:hover {
+  color: #b1ddab;
 }
 .landing .mainHeader {
   background-image: url("/images/bimo-luki-mwHzM7qB7vk-unsplash.jpg");
@@ -622,4 +662,13 @@ footer {
 }
 .aboutUs main #everyone .usContainer a:hover {
   color: #6073c9;
+}
+.attribution main {
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 5rem;
 }
