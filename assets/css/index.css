@@ -616,3 +616,10 @@ footer {
   font-size: 3rem;
   padding: 1rem 0 0 0;
 }
+.aboutUs main #everyone .usContainer a {
+  text-decoration: none;
+  color: #6d8a69;
+}
+.aboutUs main #everyone .usContainer a:hover {
+  color: #6073c9;
+}
