@@ -1,7 +1,10 @@
 .mainNav {
-    .flexbox(row nowrap, flex-end, center, center);
+    .flexbox(row nowrap, center, center, center);
     margin: 0 2rem;
     .signupNavButton();
+    @media @smTabletMQ {
+        .flexbox(row nowrap, flex-end, center, center);
+    }
 
     a {
         font-size: 2.5rem;
