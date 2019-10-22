@@ -1,0 +1,68 @@
+.aboutUs {
+    .mainHeader {
+        background-image: url("/images/sam-truong-dan--rF4kuvgHhU-unsplash.jpg");
+        background-position-y: -175px;
+    }
+
+    main {
+        padding: 5%;
+        h2 {
+            font-size: 5rem;
+            text-align: center;
+            padding-bottom: 4rem;
+        }
+
+        #everyone {
+            .flexbox(row wrap, space-around, center, center);
+
+            .usContainer {
+                margin: 3rem;
+                .flexbox(column nowrap, center, center, center);
+
+                #brett {
+                    .aboutUsImages();
+                    background-image: url("/images/T4JUEB3ME-UMDECFQ10-897d3c80b2b0-512.jpg")
+                }
+
+                #shiva {
+                    .aboutUsImages();
+                    background-image: url("/images/T4JUEB3ME-UJ85BKJ2D-891ffcc3ccce-512.png")
+                }
+
+                #nicholas {
+                    .aboutUsImages();
+                    background-image: url("/images/T4JUEB3ME-UJ9PRPB7H-01a2702a44b8-512.jpg")
+                }
+
+                #brian {
+                    .aboutUsImages();
+                    background-image: url("/images/T4JUEB3ME-UG40NEE8L-8e8806d72c28-512.png")
+                }
+
+                #kayla {
+                    .aboutUsImages();
+                    background-image: url("/images/T4JUEB3ME-UH2046CPN-be0c25886eac-512.png")
+                }
+
+                #lee {
+                    .aboutUsImages();
+                    background-image: url("/images/T4JUEB3ME-UMQTS14LV-g13b3b708a55-512.jpg")
+                }
+
+                h3,h4 {
+                    font-size: 3rem;
+                    padding: 1rem 0 0 0;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: @aboutLink;
+
+                    &:hover {
+                        color: @aboutLinkHover;
+                    }
+                }
+            }
+        }
+    }
+}

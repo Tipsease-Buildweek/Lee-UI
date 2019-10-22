@@ -1,0 +1,66 @@
+.flexbox(@flow, @justify, @alignItems, @alignContent) {
+    display: flex;
+    flex-flow: @flow;
+    justify-content: @justify;
+    align-items: @alignItems;
+    align-content: @alignContent;
+}
+
+.button(@bgColor, @fontColor, @bgHoverColor, @fontHoverColor, @padding, @fontSize, @borderRadius) {
+    background-color: @bgColor;
+    color: @fontColor;
+    padding: @padding;
+    font-size: @fontSize;
+    border-radius: @borderRadius;
+    .flexbox(row, center, center, center);
+
+    &:hover {
+        background-color: @bgHoverColor;
+        color: @fontHoverColor;
+    }
+}
+
+.aboutUsImages() {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.headerFormatting() {
+    img {
+        width: 35rem;
+        margin-top: 6rem;
+        @media @smTabletMQ {
+            width: 40rem;
+            margin-top: 3rem;
+        }
+        @media @lgTabletMQ {
+            width: 45rem;
+            margin-top: 0rem;
+        }
+    }
+    h2 {
+        color: @headerSmText;
+        margin-top: 0rem;
+        font-size: 5rem;
+        font-stretch: condensed;
+
+        @media @smTabletMQ {
+            font-size: 6rem;
+        }
+    }
+}
+
+.signupNavButton() {
+    .signupNav {
+        .button(@signUpButtonColor, @navFontColor, @signUpButtonHoverColor, @signUpFontHoverColor, 1rem, 2rem, 0.7rem);
+        border: 2px solid @signUpBorderColor;
+
+        &:hover {
+            border: 2px solid @signUpHoverBorderColor;
+        }
+    }
+}

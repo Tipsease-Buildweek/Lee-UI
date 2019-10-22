@@ -1,0 +1,27 @@
+// .attribution {
+//     footer {
+//         bottom: 0;
+//         position: relative;
+//     }
+// }
+footer {
+    width: 100%;
+    background-color: @footerBgColor;
+    color: @footerFontColor;
+    text-align: center;
+    height: 5rem;
+    font-stretch: condensed;
+    font-weight: 100;
+    bottom: 0;
+    position: absolute;
+    .flexbox(row nowrap, center, center, center);
+
+    a {
+        text-decoration: none;
+        color: @footerLink;
+        
+        &:hover {
+            color: @footerLinkHover;
+        }
+    }
+}
