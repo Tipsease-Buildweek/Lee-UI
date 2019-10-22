@@ -366,7 +366,7 @@ footer a:hover {
   color: #b1ddab;
 }
 .landing .mainHeader {
-  background-image: url("/images/bimo-luki-mwHzM7qB7vk-unsplash.jpg");
+  background-image: url("images/bimo-luki-mwHzM7qB7vk-unsplash.jpg");
   background-position: center;
 }
 .landing main #tipSteps {
@@ -580,7 +580,7 @@ footer a:hover {
   color: #363636;
 }
 .aboutUs .mainHeader {
-  background-image: url("/images/sam-truong-dan--rF4kuvgHhU-unsplash.jpg");
+  background-image: url("images/sam-truong-dan--rF4kuvgHhU-unsplash.jpg");
   background-position-y: -175px;
 }
 .aboutUs main {
@@ -613,7 +613,7 @@ footer a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("/images/T4JUEB3ME-UMDECFQ10-897d3c80b2b0-512.jpg");
+  background-image: url("images/T4JUEB3ME-UMDECFQ10-897d3c80b2b0-512.jpg");
 }
 .aboutUs main #everyone .usContainer #shiva {
   width: 300px;
@@ -622,7 +622,7 @@ footer a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("/images/T4JUEB3ME-UJ85BKJ2D-891ffcc3ccce-512.png");
+  background-image: url("images/T4JUEB3ME-UJ85BKJ2D-891ffcc3ccce-512.png");
 }
 .aboutUs main #everyone .usContainer #nicholas {
   width: 300px;
@@ -631,7 +631,7 @@ footer a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("/images/T4JUEB3ME-UJ9PRPB7H-01a2702a44b8-512.jpg");
+  background-image: url("images/T4JUEB3ME-UJ9PRPB7H-01a2702a44b8-512.jpg");
 }
 .aboutUs main #everyone .usContainer #brian {
   width: 300px;
@@ -640,7 +640,7 @@ footer a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("/images/T4JUEB3ME-UG40NEE8L-8e8806d72c28-512.png");
+  background-image: url("images/T4JUEB3ME-UG40NEE8L-8e8806d72c28-512.png");
 }
 .aboutUs main #everyone .usContainer #kayla {
   width: 300px;
@@ -649,7 +649,7 @@ footer a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("/images/T4JUEB3ME-UH2046CPN-be0c25886eac-512.png");
+  background-image: url("images/T4JUEB3ME-UH2046CPN-be0c25886eac-512.png");
 }
 .aboutUs main #everyone .usContainer #lee {
   width: 300px;
@@ -658,7 +658,7 @@ footer a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("/images/T4JUEB3ME-UMQTS14LV-g13b3b708a55-512.jpg");
+  background-image: url("images/T4JUEB3ME-UMQTS14LV-g13b3b708a55-512.jpg");
 }
 .aboutUs main #everyone .usContainer h3,
 .aboutUs main #everyone .usContainer h4 {
