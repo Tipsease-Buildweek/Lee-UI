@@ -146,6 +146,7 @@
 
         #signUp {
             .flexbox(column wrap, center, center, center);
+            margin-bottom: 6rem;
 
             div {
                 background-color: @black;
@@ -175,12 +176,10 @@
                     border: 2px solid @signUpBorderColor;
                     text-decoration: none;
                     @media @smTabletMQ {
-                        .button(@signUpButtonHoverColor, @signUpFontHoverColor, @signUpButtonHoverColor, @signUpFontHoverColor, 2rem, 2.6rem, 0.7rem);
-                    border: 2px solid @signUpBorderColor;
+                        font-size: 2.6rem;
                     }
                     @media @lgTabletMQ {
-                        .button(@signUpButtonHoverColor, @signUpFontHoverColor, @signUpButtonHoverColor, @signUpFontHoverColor, 2rem, 3.5rem, 0.7rem);
-                    border: 2px solid @signUpBorderColor;
+                        font-size: 3.5rem;
                     }
                 }
             }
