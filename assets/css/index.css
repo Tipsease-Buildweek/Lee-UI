@@ -338,6 +338,11 @@ img {
   color: #6d8a69;
 }
 footer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   width: 100%;
   background-color: #363636;
   color: white;
@@ -347,11 +352,6 @@ footer {
   font-weight: 100;
   bottom: 0;
   position: absolute;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
 }
 footer a {
   text-decoration: none;
@@ -696,6 +696,9 @@ footer a:hover {
   display: inline-block;
   border-radius: 3px;
 }
+.attribution main p {
+  margin-top: 1rem;
+}
 .attribution main span {
   display: inline-block;
   padding: 2px 3px;
@@ -707,7 +710,4 @@ footer a:hover {
   vertical-align: middle;
   top: -2px;
   fill: white;
-}
-.attribution main p {
-  margin-top: 1rem;
 }
