@@ -221,15 +221,10 @@ img {
   }
 }
 .mainNav a {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin: 1rem 1rem;
   text-decoration: none;
   color: white;
-}
-@media only screen and (min-width: 501px) {
-  .mainNav a {
-    font-size: 2rem;
-  }
 }
 .mainNav a:hover {
   color: #b1ddab;
@@ -470,7 +465,7 @@ footer a:hover {
 }
 @media only screen and (min-width: 800px) {
   .landing main #appFeatures img {
-    width: 60%;
+    width: 40%;
     border-radius: 1rem;
     margin: 3rem;
   }
