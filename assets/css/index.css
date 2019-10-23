@@ -563,12 +563,25 @@ footer a:hover {
     padding: 7rem 6rem;
   }
 }
+.landing main #signUp div h2 {
+  font-size: 2.3rem;
+}
+@media only screen and (min-width: 501px) {
+  .landing main #signUp div h2 {
+    font-size: 2.6rem;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .landing main #signUp div h2 {
+    font-size: 3.5rem;
+  }
+}
 .landing main #signUp div a {
   margin-top: 5rem;
   background-color: #e2e2e2;
   color: #363636;
-  padding: 4rem;
-  font-size: 3rem;
+  padding: 2rem;
+  font-size: 2.3rem;
   border-radius: 0.7rem;
   display: flex;
   flex-flow: row;
@@ -581,6 +594,44 @@ footer a:hover {
 .landing main #signUp div a:hover {
   background-color: #e2e2e2;
   color: #363636;
+}
+@media only screen and (min-width: 501px) {
+  .landing main #signUp div a {
+    background-color: #e2e2e2;
+    color: #363636;
+    padding: 2rem;
+    font-size: 2.6rem;
+    border-radius: 0.7rem;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border: 2px solid #363636;
+  }
+  .landing main #signUp div a:hover {
+    background-color: #e2e2e2;
+    color: #363636;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .landing main #signUp div a {
+    background-color: #e2e2e2;
+    color: #363636;
+    padding: 2rem;
+    font-size: 3.5rem;
+    border-radius: 0.7rem;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border: 2px solid #363636;
+  }
+  .landing main #signUp div a:hover {
+    background-color: #e2e2e2;
+    color: #363636;
+  }
 }
 .aboutUs .mainHeader {
   background-image: url("../../images/sam-truong-dan--rF4kuvgHhU-unsplash.jpg");
