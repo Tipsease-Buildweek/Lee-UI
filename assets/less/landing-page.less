@@ -1,5 +1,6 @@
 .landing {
 
+    // background header image
     .mainHeader {
         background-image: url("../../images/bimo-luki-mwHzM7qB7vk-unsplash.jpg");
         background-position: center;
@@ -80,7 +81,6 @@
 
             div {
                 padding: 0 3rem;
-
                 @media @lgTabletMQ {
                     width: 40%;
                 }
@@ -88,7 +88,6 @@
 
             img {
                 margin: 2rem 0;
-
                 @media @lgTabletMQ {
                     width: 40%;
                     border-radius: 1rem;
@@ -100,20 +99,18 @@
         #iconSection {
             margin: 7rem 0;
             .flexbox(column nowrap, flex-start, stretch, stretch);
-
             @media @smTabletMQ {
                 .flexbox(row wrap, space-evenly, flex-start, center);
             }
-
             @media @lgTabletMQ {
                 margin: 9rem 0 6rem 0;
             }
 
             section {
                 .flexbox(column nowrap, flex-start, center, center);
-
                 @media @smTabletMQ {
                     max-width: 30rem;
+                    margin-bottom: 3rem;
                 }
 
                 .iconContainer {
@@ -121,6 +118,7 @@
                     border-radius: 50%;
                     width: 30rem;
                     height: 30rem;
+
                     .flexbox(column nowrap, center, center, center);
 
                     i {
@@ -135,6 +133,13 @@
                 }
                 p {
                     margin-bottom: 3rem;
+                    padding: 0 3rem;
+                    @media @smTabletMQ {
+                        padding: 0 1rem;
+                    }
+                    @media @lgTabletMQ {
+                        padding: 0;
+                    }
                 }
             }
         }
@@ -150,7 +155,6 @@
                 max-width: 650px;
                 padding: 7rem 0;
                 .flexbox(column wrap, center, center, center);
-
                 @media @smTabletMQ {
                     padding: 7rem 6rem;
                 }

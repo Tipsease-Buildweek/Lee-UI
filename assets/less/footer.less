@@ -5,6 +5,7 @@
 //     }
 // }
 footer {
+    .flexbox(row nowrap, center, center, center);
     width: 100%;
     background-color: @footerBgColor;
     color: @footerFontColor;
@@ -12,9 +13,9 @@ footer {
     height: 5rem;
     font-stretch: condensed;
     font-weight: 100;
+    // code to fix footer to bottom of page
     bottom: 0;
     position: absolute;
-    .flexbox(row nowrap, center, center, center);
 
     a {
         text-decoration: none;

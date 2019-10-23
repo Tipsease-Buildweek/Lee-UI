@@ -1,3 +1,4 @@
+// flexbox mixin--includes the main properties available as parameters
 .flexbox(@flow, @justify, @alignItems, @alignContent) {
     display: flex;
     flex-flow: @flow;
@@ -6,6 +7,7 @@
     align-content: @alignContent;
 }
 
+// general button mixin.  Can be used for most of the button formatting through the parameters.
 .button(@bgColor, @fontColor, @bgHoverColor, @fontHoverColor, @padding, @fontSize, @borderRadius) {
     background-color: @bgColor;
     color: @fontColor;
@@ -20,6 +22,7 @@
     }
 }
 
+// formats the About Us Developer images.
 .aboutUsImages() {
     width: 300px;
     height: 300px;
@@ -29,6 +32,8 @@
     background-size: cover;
 }
 
+// header image and text formatting for the main pages
+// the background images are formatted in header.less
 .headerFormatting() {
     img {
         width: 35rem;
@@ -54,6 +59,7 @@
     }
 }
 
+// button formatting specifically for the navbar signup button
 .signupNavButton() {
     .signupNav {
         .button(@signUpButtonColor, @navFontColor, @signUpButtonHoverColor, @signUpFontHoverColor, 1rem, 2rem, 0.7rem);
